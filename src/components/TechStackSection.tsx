@@ -1,65 +1,41 @@
 import { motion } from 'framer-motion';
 
-interface TechItem {
-  name: string;
-  level: number;
-}
-
 interface TechCategory {
   title: string;
   icon: string;
-  items: TechItem[];
+  items: string[];
   color: string;
+  bgGlow: string;
 }
 
 const techStack: TechCategory[] = [
   {
     title: 'Frontend',
     icon: '◈',
-    color: 'from-primary to-cyan-400',
-    items: [
-      { name: 'React', level: 95 },
-      { name: 'Next.js', level: 90 },
-      { name: 'TypeScript', level: 92 },
-      { name: 'Tailwind CSS', level: 95 },
-      { name: 'Framer Motion', level: 85 },
-    ],
+    color: 'text-cyan-400',
+    bgGlow: 'group-hover:shadow-cyan-500/20',
+    items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
   },
   {
     title: 'Backend',
     icon: '⬡',
-    color: 'from-green-500 to-emerald-400',
-    items: [
-      { name: 'Node.js', level: 93 },
-      { name: 'Python', level: 88 },
-      { name: 'Go', level: 75 },
-      { name: 'GraphQL', level: 90 },
-      { name: 'REST APIs', level: 95 },
-    ],
+    color: 'text-emerald-400',
+    bgGlow: 'group-hover:shadow-emerald-500/20',
+    items: ['Node.js', 'Python', 'Go', 'GraphQL', 'REST APIs'],
   },
   {
     title: 'Database',
     icon: '◉',
-    color: 'from-purple-500 to-pink-400',
-    items: [
-      { name: 'PostgreSQL', level: 92 },
-      { name: 'MongoDB', level: 88 },
-      { name: 'Redis', level: 85 },
-      { name: 'Elasticsearch', level: 78 },
-      { name: 'Prisma', level: 90 },
-    ],
+    color: 'text-purple-400',
+    bgGlow: 'group-hover:shadow-purple-500/20',
+    items: ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'Prisma'],
   },
   {
     title: 'DevOps',
     icon: '⎔',
-    color: 'from-orange-500 to-red-400',
-    items: [
-      { name: 'Docker', level: 90 },
-      { name: 'Kubernetes', level: 80 },
-      { name: 'AWS', level: 85 },
-      { name: 'CI/CD', level: 92 },
-      { name: 'Terraform', level: 75 },
-    ],
+    color: 'text-orange-400',
+    bgGlow: 'group-hover:shadow-orange-500/20',
+    items: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Terraform'],
   },
 ];
 
@@ -115,40 +91,70 @@ export const TechStackSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
-              className="glass-card p-6 hover:border-primary/30 transition-all duration-300"
+              className="glass-card p-6 hover:border-primary/30 transition-all duration-300 group"
             >
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-6">
-                <span className={`text-2xl bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}>
+                <span className={`text-2xl ${category.color}`}>
                   {category.icon}
                 </span>
                 <h3 className="text-xl font-bold">{category.title}</h3>
               </div>
 
-              {/* Skills */}
-              <div className="space-y-4">
+              {/* Skills as Tags */}
+              <div className="flex flex-wrap gap-2">
                 {category.items.map((item, itemIndex) => (
-                  <motion.div
-                    key={item.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                  <motion.span
+                    key={item}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: categoryIndex * 0.1 + itemIndex * 0.05 }}
+                    transition={{ 
+                      duration: 0.3, 
+                      delay: categoryIndex * 0.1 + itemIndex * 0.05,
+                      type: "spring",
+                      stiffness: 200
+                    }}
+                    whileHover={{ 
+                      scale: 1.1, 
+                      y: -2,
+                    }}
+                    className={`
+                      relative px-3 py-1.5 
+                      font-mono text-sm 
+                      bg-secondary/50 
+                      border border-border/50
+                      rounded-lg
+                      cursor-default
+                      transition-all duration-300
+                      hover:border-primary/50
+                      hover:bg-secondary
+                      hover:shadow-lg
+                      ${category.bgGlow}
+                      group/tag
+                    `}
                   >
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="font-mono text-sm text-foreground">{item.name}</span>
-                      <span className="text-xs text-muted-foreground font-mono">{item.level}%</span>
-                    </div>
-                    <div className="h-1.5 bg-secondary rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${item.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: categoryIndex * 0.1 + itemIndex * 0.05 }}
-                        className={`h-full rounded-full bg-gradient-to-r ${category.color}`}
-                      />
-                    </div>
-                  </motion.div>
+                    {/* Glow effect on hover */}
+                    <span className={`
+                      absolute inset-0 rounded-lg opacity-0 
+                      group-hover/tag:opacity-100 
+                      transition-opacity duration-300
+                      blur-sm -z-10
+                      ${category.color.replace('text-', 'bg-').replace('-400', '-500/20')}
+                    `} />
+                    
+                    {/* Prefix dot */}
+                    <span className={`
+                      inline-block w-1.5 h-1.5 rounded-full mr-2
+                      ${category.color.replace('text-', 'bg-')}
+                      opacity-60 group-hover/tag:opacity-100
+                      transition-opacity duration-300
+                    `} />
+                    
+                    <span className="text-foreground/80 group-hover/tag:text-foreground transition-colors duration-300">
+                      {item}
+                    </span>
+                  </motion.span>
                 ))}
               </div>
             </motion.div>
