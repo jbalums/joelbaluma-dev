@@ -29,7 +29,7 @@ export const HeroSection = () => {
 			<div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[100px] animate-pulse-glow" />
 			<div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-[100px] animate-pulse-glow delay-1000" />
 
-			<div className="relative z-10 container mx-auto px-6 py-20">
+			<div className="relative z-10 container mx-auto px-6 py-20 text-center">
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -48,11 +48,19 @@ export const HeroSection = () => {
 							Available for new opportunities!
 						</span>
 					</motion.div>
-
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 0.2 }}
+						className="code-line mb-6 "
+					>
+						<h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-wide uppercase">
+							Joel Baluma
+						</h1>
+					</motion.div>
 					{/* Main headline */}
-					<h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
-						<span className="text-foreground">I build</span>
-						<br />
+					<h4 className="text-md md:text-md lg:text-xl font-bold leading-tight mb-6">
+						<span className="text-foreground">I build</span>&nbsp;
 						<span className="gradient-text glow-text">
 							<TypewriterText
 								texts={[
@@ -63,14 +71,14 @@ export const HeroSection = () => {
 								]}
 							/>
 						</span>
-					</h1>
+					</h4>
 
 					{/* Subtitle */}
 					<motion.p
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.4, duration: 0.8 }}
-						className="text-xl md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed"
+						className="text-xl md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed mx-auto"
 					>
 						Software Engineer with 7+ years of experience building
 						scalable web and SaaS applications. Expert in React,
@@ -82,7 +90,7 @@ export const HeroSection = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4 }}
-						className="flex flex-wrap items-start justify-start gap-4 text-xl text-muted-foreground mb-12"
+						className="flex flex-wrap items-center justify-center gap-4 text-xl text-muted-foreground mb-12 "
 					>
 						<a
 							href="mailto:baluma.joel91@gmail.com"
@@ -111,7 +119,7 @@ export const HeroSection = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.6, duration: 0.6 }}
-						className="flex flex-wrap gap-4 mb-16"
+						className="flex flex-wrap gap-4 mb-16 items-center justify-center"
 					>
 						<motion.a
 							href="#projects"

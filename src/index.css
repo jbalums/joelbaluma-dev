@@ -55,8 +55,8 @@
 		/* Gradients */
 		--gradient-primary: linear-gradient(
 			135deg,
-			hsl(192 85% 38%),
-			hsl(270 80% 55%)
+			hsl(224, 95%, 66%),
+			hsl(233, 100%, 62%)
 		);
 		--gradient-dark: linear-gradient(
 			180deg,
