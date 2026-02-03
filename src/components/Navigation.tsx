@@ -42,7 +42,7 @@ export const Navigation = () => {
 					>
 						{/* Logo */}
 						<a
-							href="#"
+							href="/"
 							className="font-mono font-bold text-lg hover:text-primary transition-colors"
 						>
 							<span className="text-primary">&lt;</span>

@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { TypewriterText } from "./TypewriterText";
 import { Button } from "@/components/ui/button";
-
+import joelResume from "@/assets/resume/JoelBaluma-Resume.pdf";
 export const HeroSection = () => {
 	const scrollToAbout = () => {
 		document
@@ -78,7 +78,7 @@ export const HeroSection = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.4, duration: 0.8 }}
-						className="text-xl md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed mx-auto"
+						className="text-md md:text-lg text-muted-foreground max-w-2xl mb-12 leading-relaxed mx-auto"
 					>
 						Software Engineer with 7+ years of experience building
 						scalable web and SaaS applications. Expert in React,
@@ -90,7 +90,7 @@ export const HeroSection = () => {
 						initial={{ opacity: 0, y: 20 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.4 }}
-						className="flex flex-wrap items-center justify-center gap-4 text-xl text-muted-foreground mb-12 "
+						className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground mb-12 "
 					>
 						<a
 							href="mailto:baluma.joel91@gmail.com"
@@ -122,22 +122,23 @@ export const HeroSection = () => {
 						className="flex flex-wrap gap-4 mb-16 items-center justify-center"
 					>
 						<motion.a
-							href="#projects"
+							href={joelResume}
 							whileHover={{ scale: 1.02 }}
 							whileTap={{ scale: 0.98 }}
 							className="group inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl transition-all duration-300 glow-box"
+							download="JoelBaluma-Resume.pdf"
 						>
 							Download Resume{" "}
 							<motion.span
 								animate={{ y: [0, 4, 0] }}
 								transition={{ duration: 1.5, repeat: Infinity }}
 							>
-								{" "}
 								<Download className="w-6 h-6" />
 							</motion.span>
 						</motion.a>
 						<motion.a
-							href="#contact"
+							href="https://github.com/jbalums/"
+							target="_blank"
 							whileHover={{ scale: 1.02 }}
 							whileTap={{ scale: 0.98 }}
 							className="inline-flex items-center gap-2 px-8 py-4 glass-card font-semibold hover:bg-secondary/50 transition-all duration-300"
@@ -147,7 +148,8 @@ export const HeroSection = () => {
 						</motion.a>
 
 						<motion.a
-							href="#contact"
+							href="https://www.linkedin.com/in/joelbaluma/"
+							target="_blank"
 							whileHover={{ scale: 1.02 }}
 							whileTap={{ scale: 0.98 }}
 							className="inline-flex items-center gap-2 px-8 py-4 glass-card font-semibold hover:bg-secondary/50 transition-all duration-300"
