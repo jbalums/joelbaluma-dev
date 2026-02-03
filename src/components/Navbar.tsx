@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   { href: "#skills", label: "Skills" },
@@ -50,11 +51,12 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-base text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
               </a>
             ))}
+            <ThemeToggle />
             <Button size="sm" asChild>
               <a href="#contact">Hire Me</a>
             </Button>
@@ -85,13 +87,14 @@ const Navbar = () => {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+                    className="block px-4 py-2 text-base text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                   >
                     {link.label}
                   </a>
                 ))}
-                <div className="px-4 pt-2">
-                  <Button className="w-full" asChild>
+                <div className="px-4 pt-2 flex items-center justify-between">
+                  <ThemeToggle />
+                  <Button asChild>
                     <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                       Hire Me
                     </a>

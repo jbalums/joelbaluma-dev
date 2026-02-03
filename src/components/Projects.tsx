@@ -70,7 +70,7 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mb-12">
+          <p className="text-lg text-muted-foreground max-w-2xl mb-12">
             A selection of projects I've worked on across different industries.
           </p>
         </motion.div>
@@ -102,17 +102,17 @@ const Projects = () => {
               <span className="text-xs font-mono text-accent mb-2 block">
                 {project.category}
               </span>
-              <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
                 {project.title}
               </h3>
-              <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+              <p className="text-base text-muted-foreground mb-4 line-clamp-3">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="text-xs font-mono text-muted-foreground"
+                    className="text-sm font-mono text-muted-foreground"
                   >
                     {tech}
                   </span>

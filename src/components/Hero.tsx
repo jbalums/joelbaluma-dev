@@ -76,7 +76,7 @@ const Hero = () => {
             </span>
           </div>
 
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 text-balance">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 text-balance">
             Software Engineer with 7+ years of experience building scalable web and SaaS applications. 
             Strong full-stack expertise in React, Next.js, PHP, Laravel, and WordPress.
           </p>

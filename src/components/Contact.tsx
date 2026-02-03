@@ -18,7 +18,7 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mb-12">
+          <p className="text-lg text-muted-foreground max-w-2xl mb-12">
             I'm currently available for freelance projects and full-time opportunities. 
             Let's build something great together.
           </p>

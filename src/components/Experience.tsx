@@ -58,7 +58,7 @@ const Experience = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Work <span className="gradient-text">Experience</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mb-12">
+          <p className="text-lg text-muted-foreground max-w-2xl mb-12">
             7+ years of building production-ready applications across various industries.
           </p>
         </motion.div>
@@ -94,7 +94,7 @@ const Experience = () => {
                       <Briefcase className="w-4 h-4" />
                       {exp.company}
                     </p>
-                    <ul className={`space-y-2 text-sm text-muted-foreground ${index % 2 === 0 ? "md:text-right" : ""}`}>
+                    <ul className={`space-y-2 text-base text-muted-foreground ${index % 2 === 0 ? "md:text-right" : ""}`}>
                       {exp.description.map((item, i) => (
                         <li key={i} className="leading-relaxed">
                           {item}
