@@ -90,15 +90,28 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: 17px;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 18px;
+    }
   }
 
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-sans);
+    line-height: 1.7;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold tracking-tight;
+    line-height: 1.3;
+  }
+
+  p {
+    line-height: 1.8;
   }
 
   code, .font-mono {
@@ -144,7 +157,7 @@
   }
 
   .code-line {
-    @apply font-mono text-sm text-muted-foreground;
+    @apply font-mono text-base text-muted-foreground;
   }
 
   .code-line::before {

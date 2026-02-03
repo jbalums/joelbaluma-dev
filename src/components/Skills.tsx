@@ -52,7 +52,7 @@ const Skills = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Tech <span className="gradient-text">Stack</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mb-12">
+          <p className="text-lg text-muted-foreground max-w-2xl mb-12">
             Technologies and tools I use to bring ideas to life.
           </p>
         </motion.div>
@@ -70,14 +70,14 @@ const Skills = () => {
               variants={itemVariants}
               className="card-glow bg-card p-6 rounded-lg border border-border"
             >
-              <h3 className="font-mono text-sm text-primary mb-4">
+              <h3 className="font-mono text-base text-primary mb-4">
                 {`// ${category.title}`}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1.5 text-sm bg-secondary text-secondary-foreground rounded-md font-medium"
+                    className="px-3 py-1.5 text-base bg-secondary text-secondary-foreground rounded-md font-medium"
                   >
                     {skill}
                   </span>
