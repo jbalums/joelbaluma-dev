@@ -14,28 +14,28 @@ const techStack: TechCategory[] = [
     icon: '◈',
     color: 'text-cyan-400',
     bgGlow: 'group-hover:shadow-cyan-500/20',
-    items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    items: ['React.js', 'Next.js', 'Vue.js', 'Nuxt.js', 'TypeScript', 'Tailwind CSS', 'Bootstrap', 'Sass'],
   },
   {
     title: 'Backend',
     icon: '⬡',
     color: 'text-emerald-400',
     bgGlow: 'group-hover:shadow-emerald-500/20',
-    items: ['Node.js', 'Python', 'Go', 'GraphQL', 'REST APIs'],
+    items: ['PHP (OOP/MVC)', 'Laravel', 'REST APIs', 'API Integration', 'WebSockets'],
   },
   {
-    title: 'Database',
+    title: 'WordPress',
+    icon: '◎',
+    color: 'text-blue-400',
+    bgGlow: 'group-hover:shadow-blue-500/20',
+    items: ['Custom Themes', 'Custom Plugins', 'CPT & Taxonomies', 'ACF', 'Performance', 'Security'],
+  },
+  {
+    title: 'Database & DevOps',
     icon: '◉',
     color: 'text-purple-400',
     bgGlow: 'group-hover:shadow-purple-500/20',
-    items: ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'Prisma'],
-  },
-  {
-    title: 'DevOps',
-    icon: '⎔',
-    color: 'text-orange-400',
-    bgGlow: 'group-hover:shadow-orange-500/20',
-    items: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Terraform'],
+    items: ['MySQL', 'PostgreSQL', 'MongoDB', 'Git', 'Composer', 'NPM', 'SSH'],
   },
 ];
 
@@ -170,7 +170,7 @@ export const TechStackSection = () => {
           className="mt-12 text-center"
         >
           <p className="text-muted-foreground font-mono text-sm">
-            <span className="text-primary">+</span> Always learning: Rust, WebAssembly, Edge Computing
+            <span className="text-primary">+</span> Always learning: Cloud Architecture, DevOps, AI/ML Integration
           </p>
         </motion.div>
       </div>

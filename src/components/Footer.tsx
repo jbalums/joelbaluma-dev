@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 export const Footer = () => {
   const scrollToTop = () => {
@@ -14,14 +14,14 @@ export const Footer = () => {
           <div className="flex flex-col items-center md:items-start gap-4">
             <a href="#" className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center font-bold text-primary-foreground text-lg">
-                D
+                JB
               </div>
               <span className="font-bold text-lg">
-                dev<span className="text-primary">.lab</span>
+                joel<span className="text-primary">.dev</span>
               </span>
             </a>
             <p className="text-sm text-muted-foreground font-mono">
-              © {new Date().getFullYear()} • Built with precision
+              © {new Date().getFullYear()} Joel Baluma • Built with precision
             </p>
           </div>
 
@@ -38,8 +38,7 @@ export const Footer = () => {
             {[
               { icon: Github, href: '#' },
               { icon: Linkedin, href: '#' },
-              { icon: Twitter, href: '#' },
-              { icon: Mail, href: 'mailto:hello@developer.dev' },
+              { icon: Mail, href: 'mailto:baluma.joel91@gmail.com' },
             ].map((link, i) => (
               <motion.a
                 key={i}

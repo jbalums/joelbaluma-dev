@@ -3,52 +3,52 @@ import { Shield, Zap, Database, Globe, Cpu, Lock, BarChart3, Code2 } from 'lucid
 
 const capabilities = [
   {
-    icon: Shield,
-    title: 'Authentication Systems',
-    description: 'OAuth, JWT, MFA, SSO integration with enterprise-grade security',
-    tags: ['Auth0', 'Passport.js', 'RBAC'],
+    icon: Globe,
+    title: 'WordPress Development',
+    description: 'Custom themes, plugins, performance optimization, and security hardening',
+    tags: ['Themes', 'Plugins', 'ACF'],
   },
   {
     icon: Zap,
-    title: 'REST & GraphQL APIs',
-    description: 'High-performance APIs with caching, pagination, and real-time subscriptions',
-    tags: ['OpenAPI', 'Apollo', 'tRPC'],
+    title: 'Laravel & PHP',
+    description: 'Full-stack development with MVC architecture and RESTful APIs',
+    tags: ['Laravel', 'PHP OOP', 'REST'],
+  },
+  {
+    icon: Code2,
+    title: 'React & Next.js',
+    description: 'Modern frontend development with TypeScript and state management',
+    tags: ['React', 'Next.js', 'TypeScript'],
   },
   {
     icon: Database,
-    title: 'Database Architecture',
-    description: 'Schema design, migrations, indexing, and query optimization',
-    tags: ['SQL', 'NoSQL', 'Sharding'],
+    title: 'Database Design',
+    description: 'Schema design, query optimization, and multi-database expertise',
+    tags: ['MySQL', 'PostgreSQL', 'MongoDB'],
   },
   {
     icon: BarChart3,
     title: 'Performance Optimization',
-    description: 'Profiling, caching strategies, and sub-100ms response times',
-    tags: ['CDN', 'Redis', 'SSR'],
+    description: 'Caching, SEO optimization, achieving ~60% speed improvements',
+    tags: ['Caching', 'SEO', 'Speed'],
   },
   {
-    icon: Globe,
-    title: 'Cloud Infrastructure',
-    description: 'Auto-scaling, load balancing, and multi-region deployments',
-    tags: ['AWS', 'GCP', 'Vercel'],
-  },
-  {
-    icon: Lock,
-    title: 'Security Engineering',
-    description: 'OWASP compliance, penetration testing, and vulnerability management',
-    tags: ['HTTPS', 'CSP', 'WAF'],
+    icon: Shield,
+    title: 'API Integration',
+    description: 'Third-party integrations, WebSockets, and real-time data handling',
+    tags: ['REST', 'WebSockets', 'APIs'],
   },
   {
     icon: Cpu,
-    title: 'System Design',
-    description: 'Microservices, event-driven architecture, and distributed systems',
-    tags: ['Kafka', 'gRPC', 'DDD'],
+    title: 'Healthcare Systems',
+    description: 'Hospital management, clinical workflows, and patient data systems',
+    tags: ['HIPAA', 'EHR', 'Clinical'],
   },
   {
-    icon: Code2,
-    title: 'CI/CD Pipelines',
-    description: 'Automated testing, staging environments, and zero-downtime deploys',
-    tags: ['GitHub Actions', 'Docker', 'K8s'],
+    icon: Lock,
+    title: 'SaaS Applications',
+    description: 'Scalable web applications with multi-tenant architecture',
+    tags: ['SaaS', 'Multi-tenant', 'Scale'],
   },
 ];
 
@@ -128,9 +128,9 @@ export const ExperienceSection = () => {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { label: 'Code Reviews', value: '500+' },
-              { label: 'Pull Requests', value: '2,000+' },
-              { label: 'Lines of Code', value: '1M+' },
+              { label: 'Years Experience', value: '7+' },
+              { label: 'Projects Delivered', value: '40+' },
+              { label: 'Industries', value: '5+' },
               { label: 'Coffee Consumed', value: '∞' },
             ].map((stat) => (
               <div key={stat.label}>
