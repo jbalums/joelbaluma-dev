@@ -41,10 +41,10 @@ export const Navigation = () => {
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 group">
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center font-bold text-primary-foreground text-lg group-hover:scale-105 transition-transform">
-                D
+                JB
               </div>
               <span className="font-bold text-lg hidden sm:block">
-                dev<span className="text-primary">.lab</span>
+                joel<span className="text-primary">.dev</span>
               </span>
             </a>
 

@@ -14,20 +14,20 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Developer Portfolio | Full-Stack Engineer</title>
-        <meta name="description" content="Full-stack engineer focused on building production-ready applications that solve real problems and scale with your business. Specializing in React, Node.js, and cloud architecture." />
-        <meta name="keywords" content="full-stack developer, software engineer, React, Node.js, TypeScript, portfolio" />
-        <link rel="canonical" href="https://developer.dev" />
+        <title>Joel Baluma | Full-Stack Software Engineer</title>
+        <meta name="description" content="Software Engineer with 7+ years of experience building scalable web and SaaS applications. Expert in React, Next.js, Laravel, and WordPress development." />
+        <meta name="keywords" content="Joel Baluma, software engineer, full-stack developer, React, Next.js, Laravel, WordPress, PHP, web development" />
+        <link rel="canonical" href="https://joelbaluma.dev" />
         
         {/* Open Graph */}
-        <meta property="og:title" content="Developer Portfolio | Full-Stack Engineer" />
-        <meta property="og:description" content="Full-stack engineer focused on building production-ready applications that scale." />
+        <meta property="og:title" content="Joel Baluma | Full-Stack Software Engineer" />
+        <meta property="og:description" content="Software Engineer with 7+ years of experience building scalable web and SaaS applications." />
         <meta property="og:type" content="website" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Developer Portfolio | Full-Stack Engineer" />
-        <meta name="twitter:description" content="Full-stack engineer focused on building production-ready applications that scale." />
+        <meta name="twitter:title" content="Joel Baluma | Full-Stack Software Engineer" />
+        <meta name="twitter:description" content="Software Engineer with 7+ years of experience building scalable web and SaaS applications." />
       </Helmet>
 
       <div className="relative min-h-screen">

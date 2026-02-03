@@ -41,10 +41,10 @@ export const HeroSection = () => {
             <span className="gradient-text glow-text">
               <TypewriterText
                 texts={[
-                  'scalable systems',
-                  'elegant APIs',
-                  'robust backends',
-                  'seamless experiences',
+                  'scalable web apps',
+                  'Laravel backends',
+                  'WordPress solutions',
+                  'React interfaces',
                 ]}
               />
             </span>
@@ -57,8 +57,8 @@ export const HeroSection = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12 leading-relaxed"
           >
-            Full-stack engineer focused on building production-ready applications 
-            that solve real problems and scale with your business.
+            Software Engineer with 7+ years of experience building scalable web 
+            and SaaS applications. Expert in React, Next.js, Laravel, and WordPress.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -101,10 +101,10 @@ export const HeroSection = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-4"
           >
             {[
-              { icon: Terminal, label: 'Years Experience', value: '8+' },
-              { icon: Cpu, label: 'Projects Delivered', value: '50+' },
-              { icon: Database, label: 'APIs Built', value: '100+' },
-              { icon: Globe, label: 'Users Served', value: '1M+' },
+              { icon: Terminal, label: 'Years Experience', value: '7+' },
+              { icon: Cpu, label: 'Projects Delivered', value: '40+' },
+              { icon: Database, label: 'Industries Served', value: '5+' },
+              { icon: Globe, label: 'Clients Happy', value: '30+' },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

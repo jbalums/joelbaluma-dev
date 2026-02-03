@@ -63,12 +63,11 @@ export const ContactSection = () => {
     setIsSubmitting(false);
   };
 
-  const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:hello@developer.dev', label: 'Email' },
-  ];
+const socialLinks = [
+  { icon: Github, href: '#', label: 'GitHub' },
+  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  { icon: Mail, href: 'mailto:baluma.joel91@gmail.com', label: 'Email' },
+];
 
   return (
     <section id="contact" className="relative py-32 overflow-hidden">
