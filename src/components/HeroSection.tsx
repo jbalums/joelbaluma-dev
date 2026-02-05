@@ -23,7 +23,7 @@ export const HeroSection = () => {
 	};
 
 	return (
-		<section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+		<section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
 			{/* Gradient overlays */}
 			<div className="absolute inset-0 mesh-gradient opacity-60" />
 			<div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[100px] animate-pulse-glow" />
