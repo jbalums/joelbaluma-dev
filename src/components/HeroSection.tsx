@@ -18,7 +18,7 @@ import joelResume from "@/assets/resume/JoelBaluma-Resume.pdf";
 export const HeroSection = () => {
 	const scrollToAbout = () => {
 		document
-			.getElementById("about")
+			.getElementById("stack")
 			?.scrollIntoView({ behavior: "smooth" });
 	};
 
