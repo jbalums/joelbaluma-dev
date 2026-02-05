@@ -65,14 +65,14 @@ export const Navigation = () => {
 						</div>
 
 						{/* CTA */}
-						<div className="hidden md:block">
+						{/* <div className="hidden md:block">
 							<a
 								href="#contact"
 								className="px-5 py-2.5 bg-primary text-primary-foreground font-semibold rounded-xl hover:opacity-90 transition-opacity text-sm"
 							>
 								Let's Talk
 							</a>
-						</div>
+						</div> */}
 
 						{/* Mobile Menu Button */}
 						<button
