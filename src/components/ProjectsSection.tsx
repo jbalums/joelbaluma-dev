@@ -79,7 +79,7 @@ const projects: Project[] = [
 		description:
 			"Multiple WordPress websites for healthcare institutions, featuring custom themes and plugins tailored to medical services and patient engagement.",
 		image: usaClinicGroup,
-		imageClass: "blur-[10px]",
+		imageClass: "blur-[20px]",
 		techStack: [
 			"WordPress",
 			"PHP",
