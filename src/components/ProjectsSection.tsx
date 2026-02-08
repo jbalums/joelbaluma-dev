@@ -11,6 +11,7 @@ import {
 	Database,
 	Globe,
 	CloudLightning,
+	Wallet2,
 } from "lucide-react";
 import globalOrImg from "@/assets/images/corh.global-or.com_.png";
 import usaClinicGroup from "@/assets/images/usa-clinics-group.jpeg";
@@ -18,6 +19,7 @@ import gtcApp from "@/assets/images/gtcApp.png";
 import wireNyc from "@/assets/images/wirenyc.com_.png";
 import bqBuilderware from "@/assets/images/www.bqbuilderware.com_.png";
 import mactanRock from "@/assets/images/www.mactanrock-inventory.com_login.png";
+import budgetTracker from "@/assets/images/budget-tracker.joelbaluma.com_.png";
 
 interface Project {
 	id: string;
@@ -42,6 +44,29 @@ interface Project {
 }
 
 const projects: Project[] = [
+	{
+		id: "budget-tracker-web-app",
+		title: "Budget Tracker Web App",
+		tagline: "A responsive web application for tracking personal finances",
+		description:
+			"Budget Tracker Web App with rollover feature on monthly budget expenses.",
+		image: budgetTracker,
+		imageClass: "object-top",
+		techStack: ["ReactJs", "Tailwind CSS", "Supabase", "Vite"],
+		metrics: [],
+		challenges: [
+			"Designing an intuitive UI for complex financial data",
+			"Implementing secure user authentication and data storage",
+			"Ensuring responsive design across devices",
+		],
+		solutions: [
+			"Implemented a clean and modern UI with Tailwind CSS",
+			"Used Supabase for secure authentication and real-time data handling",
+			"Built a mobile-first responsive design with React and Tailwind",
+		],
+		links: { live: "https://budget-tracker.joelbaluma.com/" },
+		color: "from-blue-600 to-indigo-900",
+	},
 	{
 		id: "wirenyc-com",
 		title: "Electrician Service WordPress Sites",
@@ -69,7 +94,7 @@ const projects: Project[] = [
 			"Built custom contact and quote request forms",
 			"Follows best practices for WordPress development",
 		],
-		links: { live: "http://wirenyc.com/" },
+		links: { live: "https://wirenyc.com/" },
 		color: "from-primary to-cyan-400",
 	},
 	{
@@ -79,7 +104,7 @@ const projects: Project[] = [
 		description:
 			"Multiple WordPress websites for healthcare institutions, featuring custom themes and plugins tailored to medical services and patient engagement.",
 		image: usaClinicGroup,
-		imageClass: "blur-[20px]",
+		imageClass: "blur-[4px]",
 		techStack: [
 			"WordPress",
 			"PHP",
@@ -110,41 +135,41 @@ const projects: Project[] = [
 		links: {},
 		color: "from-primary to-cyan-400",
 	},
-	{
-		id: "hospital-or-system",
-		title: "Hospital OR Management",
-		tagline: "Operating room scheduling & Procedure Cards Management",
-		description:
-			"A comprehensive hospital operating room management system supporting procedure cards management, real-time data handling, and scheduling for healthcare facilities.",
-		image: globalOrImg,
-		imageClass: "object-top",
-		techStack: [
-			"React.js",
-			"Next.js",
-			"Laravel",
-			"MySQL",
-			"REST APIs",
-			"Tailwind CSS",
-			"Bootstrap",
-		],
-		metrics: [
-			{ label: "Years in Production", value: "5+", icon: Clock },
-			{ label: "Clinical Workflows", value: "20+", icon: Zap },
-			{ label: "Healthcare Facility", value: "Enterprise", icon: Server },
-		],
-		challenges: [
-			"Complex scheduling with real-time availability",
-			"Strict healthcare compliance requirements",
-			"Integration with existing hospital systems",
-		],
-		solutions: [
-			"Event-driven architecture for real-time updates",
-			"Role-based access control for clinical staff",
-			"RESTful APIs for seamless system integration",
-		],
-		links: { live: "https://corh.global-or.com/" },
-		color: "from-primary to-cyan-400",
-	},
+	// {
+	// 	id: "hospital-or-system",
+	// 	title: "Hospital OR Management",
+	// 	tagline: "Operating room scheduling & Procedure Cards Management",
+	// 	description:
+	// 		"A comprehensive hospital operating room management system supporting procedure cards management, real-time data handling, and scheduling for healthcare facilities.",
+	// 	image: globalOrImg,
+	// 	imageClass: "object-top",
+	// 	techStack: [
+	// 		"React.js",
+	// 		"Next.js",
+	// 		"Laravel",
+	// 		"MySQL",
+	// 		"REST APIs",
+	// 		"Tailwind CSS",
+	// 		"Bootstrap",
+	// 	],
+	// 	metrics: [
+	// 		{ label: "Years in Production", value: "5+", icon: Clock },
+	// 		{ label: "Clinical Workflows", value: "20+", icon: Zap },
+	// 		{ label: "Healthcare Facility", value: "Enterprise", icon: Server },
+	// 	],
+	// 	challenges: [
+	// 		"Complex scheduling with real-time availability",
+	// 		"Strict healthcare compliance requirements",
+	// 		"Integration with existing hospital systems",
+	// 	],
+	// 	solutions: [
+	// 		"Event-driven architecture for real-time updates",
+	// 		"Role-based access control for clinical staff",
+	// 		"RESTful APIs for seamless system integration",
+	// 	],
+	// 	links: { live: "https://corh.global-or.com/" },
+	// 	color: "from-primary to-cyan-400",
+	// },
 	{
 		id: "wms-system",
 		title: "Warehouse Management System",
