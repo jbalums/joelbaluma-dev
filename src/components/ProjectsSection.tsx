@@ -104,7 +104,7 @@ const projects: Project[] = [
 		description:
 			"Multiple WordPress websites for healthcare institutions, featuring custom themes and plugins tailored to medical services and patient engagement.",
 		image: usaClinicGroup,
-		imageClass: "blur-[4px]",
+		imageClass: "blur-[2px]",
 		techStack: [
 			"WordPress",
 			"PHP",
@@ -135,41 +135,41 @@ const projects: Project[] = [
 		links: {},
 		color: "from-primary to-cyan-400",
 	},
-	// {
-	// 	id: "hospital-or-system",
-	// 	title: "Hospital OR Management",
-	// 	tagline: "Operating room scheduling & Procedure Cards Management",
-	// 	description:
-	// 		"A comprehensive hospital operating room management system supporting procedure cards management, real-time data handling, and scheduling for healthcare facilities.",
-	// 	image: globalOrImg,
-	// 	imageClass: "object-top",
-	// 	techStack: [
-	// 		"React.js",
-	// 		"Next.js",
-	// 		"Laravel",
-	// 		"MySQL",
-	// 		"REST APIs",
-	// 		"Tailwind CSS",
-	// 		"Bootstrap",
-	// 	],
-	// 	metrics: [
-	// 		{ label: "Years in Production", value: "5+", icon: Clock },
-	// 		{ label: "Clinical Workflows", value: "20+", icon: Zap },
-	// 		{ label: "Healthcare Facility", value: "Enterprise", icon: Server },
-	// 	],
-	// 	challenges: [
-	// 		"Complex scheduling with real-time availability",
-	// 		"Strict healthcare compliance requirements",
-	// 		"Integration with existing hospital systems",
-	// 	],
-	// 	solutions: [
-	// 		"Event-driven architecture for real-time updates",
-	// 		"Role-based access control for clinical staff",
-	// 		"RESTful APIs for seamless system integration",
-	// 	],
-	// 	links: { live: "https://corh.global-or.com/" },
-	// 	color: "from-primary to-cyan-400",
-	// },
+	{
+		id: "hospital-or-system",
+		title: "Hospital OR Management",
+		tagline: "Operating room scheduling & Procedure Cards Management",
+		description:
+			"A comprehensive hospital operating room management system supporting procedure cards management, real-time data handling, and scheduling for healthcare facilities.",
+		image: globalOrImg,
+		imageClass: "object-top",
+		techStack: [
+			"React.js",
+			"Next.js",
+			"Laravel",
+			"MySQL",
+			"REST APIs",
+			"Tailwind CSS",
+			"Bootstrap",
+		],
+		metrics: [
+			{ label: "Years in Production", value: "5+", icon: Clock },
+			{ label: "Clinical Workflows", value: "20+", icon: Zap },
+			{ label: "Healthcare Facility", value: "Enterprise", icon: Server },
+		],
+		challenges: [
+			"Complex scheduling with real-time availability",
+			"Strict healthcare compliance requirements",
+			"Integration with existing hospital systems",
+		],
+		solutions: [
+			"Event-driven architecture for real-time updates",
+			"Role-based access control for clinical staff",
+			"RESTful APIs for seamless system integration",
+		],
+		links: { live: "https://corh.global-or.com/" },
+		color: "from-primary to-cyan-400",
+	},
 	{
 		id: "wms-system",
 		title: "Warehouse Management System",
@@ -480,7 +480,7 @@ export const ProjectsSection = () => {
 														key={i}
 														className="flex items-start gap-2 text-sm text-muted-foreground"
 													>
-														<span className="text-orange-400 mt-1">
+														<span className="text-orange-400 -mt-0.5">
 															▸
 														</span>
 														{challenge}
@@ -500,7 +500,7 @@ export const ProjectsSection = () => {
 														key={i}
 														className="flex items-start gap-2 text-sm text-muted-foreground"
 													>
-														<span className="text-green-400 mt-1">
+														<span className="text-green-400">
 															✓
 														</span>
 														{solution}
