@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { TypewriterText } from "./TypewriterText";
 import { Button } from "@/components/ui/button";
-import joelResume from "@/assets/resume/JoelBaluma-Resume.pdf";
+import joelResume from "@/assets/resume/Joel-Baluma-Resume.pdf";
 export const HeroSection = () => {
 	const scrollToAbout = () => {
 		document
@@ -126,7 +126,7 @@ export const HeroSection = () => {
 							whileHover={{ scale: 1.02 }}
 							whileTap={{ scale: 0.98 }}
 							className="group inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl transition-all duration-300 glow-box"
-							download="JoelBaluma-Resume.pdf"
+							download="Joel-Baluma-Resume.pdf"
 						>
 							Download Resume{" "}
 							<motion.span
