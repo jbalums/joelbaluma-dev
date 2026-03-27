@@ -20,6 +20,7 @@ import wireNyc from "@/assets/images/wirenyc.com_.png";
 import bqBuilderware from "@/assets/images/www.bqbuilderware.com_.png";
 import mactanRock from "@/assets/images/www.mactanrock-inventory.com_login.png";
 import budgetTracker from "@/assets/images/budget-tracker.joelbaluma.com_.png";
+import fuelWatchPH from "@/assets/images/fuel-watch-ph.pages.dev_(iPhone 14 Pro Max).png";
 
 interface Project {
 	id: string;
@@ -44,6 +45,30 @@ interface Project {
 }
 
 const projects: Project[] = [
+	{
+		id: "fuel-watch-ph",
+		title: "FuelWatch PH | Real-time fuel tracking",
+		tagline:
+			"Find the cheapest gas stations near you during fuel shortages.",
+		description:
+			"Real-time fuel prices and availability across the Philippines. To find the cheapest gas stations near you during fuel shortages.",
+		image: fuelWatchPH,
+		imageClass: "object-top",
+		techStack: ["ReactJs", "Tailwind CSS", "Supabase", "Vite"],
+		metrics: [],
+		challenges: [
+			"Keeping fuel price data accurate despite frequent changes and inconsistent updates",
+			"Making location-based fuel data easy to search, compare, and understand",
+			"Building a fast MVP without sacrificing scalability and future extensibility",
+		],
+		solutions: [
+			"Implemented a Supabase backend with centralized updates and added a disclaimer to manage data reliability expectations",
+			"Structured station data with key fields and built a responsive React interface for efficient filtering and comparison",
+			"Used a React + Vite + Supabase stack to deliver quickly while maintaining a scalable and extendable architecture",
+		],
+		links: { live: "https://fuel-watch-ph.pages.dev/" },
+		color: "from-green-600 to-amber-900",
+	},
 	{
 		id: "budget-tracker-web-app",
 		title: "Budget Tracker Web App",
